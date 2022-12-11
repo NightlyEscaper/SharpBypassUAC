@@ -1,0 +1,25 @@
+{
+    "name": "SharpBypassUAC",
+    "version": "v0.0.0",
+    "command_name": "sharpbypassuac",
+    "original_author": "FatRodzianko",
+    "repo_url": "https://github.com/NightlyEscaper/SharpBypassUAC",
+    "help": "C# tool for UAC bypasses.",
+    "entrypoint": "Main",
+    "allow_args": true,
+    "default_args": "--help",
+    "is_reflective": false,
+    "is_assembly": true,
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "SharpBypassUAC.exe"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "SharpBypassUAC.exe"
+      }
+    ]
+  }
