@@ -86,6 +86,7 @@ jobs:
       run: |
         nuget.exe restore SharpBypassUAC.sln
         msbuild.exe SharpBypassUAC.sln /p:Configuration=Release /p:Platform="Any CPU" /p:OutputPath=compiled/
+        Copy-Item -Path SharpBypassUAC\compiled\SharpBypassUAC.exe -Destination compiled\SharpBypassUAC.exe
 
     - name: Build Package
       # Powershell is utter fucking trash. I AGREEEEEEEEEEEE!!!
